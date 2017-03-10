@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+<title>Travel Portfolio</title>
+
+<link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+
+<script type="text/javascript" src = "js/tabs.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+  <i class="fa fa-globe" aria-hidden="true" style="font-size:48px;"></i> <h1>Travel Log</h1>
+</header>
+
+<div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'France')">France</button>
+  <button class="tablinks" onclick="openCity(event, 'Holland')">Holland</button>
+  <button class="tablinks" onclick="openCity(event, 'SriLanka')">SriLanka</button>
+  <button class="tablinks" onclick="openCity(event, 'Switzerland')">Switzerland</button>
+  <button class="tablinks" onclick="openCity(event, 'Prague')">Prague</button>
+  <button class="tablinks" onclick="openCity(event, 'Next')">Where to next?</button>
+</div>
+
+<section class="mainbody">
+<div id="Home" class="tabcontent" style="display: block;">
+  <h3>Home</h3>
+  <p>
+    I have gone on a few holidays across to the world visit very interesting Cities and I am planning to go on more on the near future.
+    <br>
+    <br>
+    Join me on my adventure as we fill up this Travel Log!
+  </p>
+</div>
+
+<div id="France" class="tabcontent">
+  <h3>France</h3>
+  <p>
+    France is a very popular location for holidays because it is renown for being the city of love and its variety of famous monuments.
+    <br>
+    <br>
+    One of the most visited monument is the Eiffel Tower, which is a great place to take your loved one or with family to see the beautiful city of France from a high perspective.
+    <br>
+    <br>
+    DisneyLand Paris is an all time favourite especially for younger visiters, bringing your childhood to life by going through the magical world of Disney.
+  </p>
+
+  <img src="frenchflag.jpg" width="200px" height="auto">
+  <img src="eiffeltower.jpg" width="auto" height="200px">
+  <img src="disneylandparis.jpg" width="200px" height="auto">
+
+</div>
+
+<div id="Holland" class="tabcontent">
+  <h3>Holland</h3>
+  <p>
+    Holland is ...
+  </p>
+</div>
+
+<div id="SriLanka" class="tabcontent">
+  <h3>Sri Lanka</h3>
+  <p>
+    Sri Lanka is ...
+  </p>
+</div>
+
+<div id="Switzerland" class="tabcontent">
+  <h3>Switzerland</h3>
+  <p>
+    To be exact, I visited Basel and Luzern for a family trip but I still got the opportunity to explore.
+  </p>
+</div>
+
+<div id="Prague" class="tabcontent">
+  <h3>Prague</h3>
+  <p>
+    Prague is ....
+  </p> 
+</div>
+
+<div id="Next" class="tabcontent">
+  <h3>Where to next?</h3>
+  <p>
+    Which country should I go visit next?
+  </p> 
+
+<div id="poll">
+  <h3>What new country should I go visit next in Europe?</h3>
+  
+  <form>
+    <input type="radio" name="vote" value="0" onclick="getVote(this.value)">Amsterdam
+    <br>
+    <input type="radio" name="vote" value="1" onclick="getVote(this.value)">Budapest
+  </form>
+</div>
+
+<script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+
+<div id="poll">
+<h3>Do you like PHP and AJAX so far?</h3>
+<form>
+
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">Yes
+<br>
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">No
+</form>
+</div>
+
+</div>
+</section>
+
+<style>
+.parallax { 
+    /* The image used */
+    background-image: url("background2.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+
+<div id="footer"> <p>P14161677</p> </div>
+
+</body>
+</html>
