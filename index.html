@@ -21,7 +21,7 @@
 <div class="tab">
   <button class="tablinks active" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
   <button class="tablinks" onclick="openCity(event, 'France')">France</button>
-  <button class="tablinks" onclick="openCity(event, 'Holland')">Holland</button>
+  <button class="tablinks" onclick="openCity(event, 'Netherland')">Netherland</button>
   <button class="tablinks" onclick="openCity(event, 'SriLanka')">SriLanka</button>
   <button class="tablinks" onclick="openCity(event, 'Switzerland')">Switzerland</button>
   <button class="tablinks" onclick="openCity(event, 'Prague')">Prague</button>
@@ -57,32 +57,55 @@
 
 </div>
 
-<div id="Holland" class="tabcontent">
+<div id="Netherland" class="tabcontent">
   <h3>Holland</h3>
   <p>
-    Holland is ...
+    Holland is a beautiful country full of life and greenery. One thing I have learned about is that the locals are really respectful of theor environment, there is no litter or filth on the roads and pavements and they encourage actions to reduce pollution by cycling and using public transport.
+    <br>
+    <br>
+    A sight to behold in Holland is the Tulip fileds, an entire field would be populated by them and in rows of different colours, it is indeed a must visit spot.
   </p>
+
+  <img src="hollandflag.png" width="200px" height="auto">
+  <img src="holland.jpg" width="200px" height="auto">
+  <img src="tulips.jpg" width="200px" height="auto">
+
 </div>
 
 <div id="SriLanka" class="tabcontent">
   <h3>Sri Lanka</h3>
   <p>
-    Sri Lanka is ...
+    I have visited SriLanka with my family both times I went. The first trip mostly consisted of meeting family members that I have never seen before but on the second trip, we made sure to go sightseeing. Hence, we decided to travel to the middle of SriLanka, in a place called Kandy and Nuwara Eliya. There are gorgeous sceneries, tea factories and even an elephgant orphanage in Kandy. Also, Nuwara Eliya is filled with mountains and we booked a house to stay in at the peak on one of those mountains. Going exploring the culture of my origins where my parents are from gave me a good insight of how many amazing wonders this world can provide for us.
   </p>
+
+  <img src="srilankaflag.png" width="200px" height="auto">
+  <img src="elephants.jpg" width="200px" height="auto">
+  <img src="nuwaraeliya.jpg" width="200px" height="auto">
+
 </div>
 
 <div id="Switzerland" class="tabcontent">
   <h3>Switzerland</h3>
   <p>
-    To be exact, I visited Basel and Luzern for a family trip but I still got the opportunity to explore.
+    To be exact, I visited Basel and Luzern for a family trip but I still got the opportunity to explore. Alas, I only had the opportunity to be there for a few days to visit family. I still managed to make time to see around Luzern and take in the view and the magnificent bridges they have there. The locals are litterally the friendliest people I have ever met while travelling and it made me want to go there again for sure. Plus technology over there is really cheap. ;) 
   </p>
+
+  <img src="switzerlandflag.png" width="200px" height="auto">
+  <img src="swiss.jpg" width="200px" height="auto">
+  <img src="luzern.jpg" width="200px" height="auto">
+
 </div>
 
 <div id="Prague" class="tabcontent">
   <h3>Prague</h3>
   <p>
-    Prague is ....
+    Prague is a very good contry to go to for a getaway, people mainly go there for cheap drinks and cigarettes. Also, there are also plenty of history in Prague which I have visited. One of those visits was a Castle that was built by an old King and the entrance is free which I found very strange because they were not trying to make money from tourism but this is an advantage none the less. The streets are intregate and beautiful with a very roman vibe. I would recommend to visit!
   </p> 
+
+  <img src="pragueflag.png" width="200px" height="auto">
+  <img src="prague.jpg" width="200px" height="auto">
+  <img src="prague1.jpg" width="200px" height="auto">
+
 </div>
 
 <div id="Next" class="tabcontent">
@@ -90,16 +113,6 @@
   <p>
     Which country should I go visit next?
   </p> 
-
-<div id="poll">
-  <h3>What new country should I go visit next in Europe?</h3>
-  
-  <form>
-    <input type="radio" name="vote" value="0" onclick="getVote(this.value)">Amsterdam
-    <br>
-    <input type="radio" name="vote" value="1" onclick="getVote(this.value)">Budapest
-  </form>
-</div>
 
 <script>
 function getVote(int) {
@@ -120,12 +133,22 @@ function getVote(int) {
 </script>
 
 <div id="poll">
-<h3>Do you like PHP and AJAX so far?</h3>
+  <h3>What new country should I go visit next in Europe?</h3>
+  
+  <form>
+    <input type="radio" name="vote" value="0" onclick="getVote(this.value)">Amsterdam
+    <br>
+    <input type="radio" name="vote" value="1" onclick="getVote(this.value)">Budapest
+  </form>
+</div>
+
+<div id="poll">
+<h3>What new country should I go visit next Internationally?</h3>
 <form>
 
-<input type="radio" name="vote" value="0" onclick="getVote(this.value)">Yes
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">Australia
 <br>
-<input type="radio" name="vote" value="1" onclick="getVote(this.value)">No
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">Japan
 </form>
 </div>
 
